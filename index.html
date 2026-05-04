@@ -56,6 +56,20 @@
             background: #8e44ad;
             transform: translateY(-2px);
         }
+
+        #vyberPDF {
+            margin-top: 25px;
+        }
+
+        #vyberPDF a {
+            color: #8e44ad;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #vyberPDF a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -101,20 +115,28 @@
             <button class="tema" onclick="openPDFs(['pdf/slovenský realizmus.pdf'])">2. vlna slovenského realizmu</button>
         </div>
 
+        <div id="vyberPDF"></div>
+
     </div>
 
     <script>
         function openPDFs(subory) {
-            window.open(subory[0], '_blank');
+            if (subory.length === 1) {
+                window.open(subory[0], '_blank');
+            } else {
+                let vystup = "<h3>Vyber dokument:</h3>";
 
-            if (subory.length > 1) {
-                let message = "Táto téma má viac dokumentov:\n\n";
-                
                 subory.forEach(function(subor, index) {
-                    message += (index + 1) + ". " + subor + "\n";
+                    vystup += `
+                        <p>
+                            <a href="${subor}" target="_blank">
+                                Dokument ${index + 1}
+                            </a>
+                        </p>
+                    `;
                 });
 
-                alert(message);
+                document.getElementById("vyberPDF").innerHTML = vystup;
             }
         }
     </script>
