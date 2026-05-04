@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
@@ -105,9 +105,17 @@
 
     <script>
         function openPDFs(subory) {
-            subory.forEach(function(subor) {
-                window.open(subor, '_blank');
-            });
+            window.open(subory[0], '_blank');
+
+            if (subory.length > 1) {
+                let message = "Táto téma má viac dokumentov:\n\n";
+                
+                subory.forEach(function(subor, index) {
+                    message += (index + 1) + ". " + subor + "\n";
+                });
+
+                alert(message);
+            }
         }
     </script>
 </body>
