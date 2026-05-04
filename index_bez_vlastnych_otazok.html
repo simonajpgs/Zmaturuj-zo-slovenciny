@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmaturuj zo slovenčiny</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .ramovanie {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #9b59b6;
+            color: #333;
+        }
+
+        .info-text {
+            text-align: center;
+            color: #666;
+            margin: 18px 0 26px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 14px;
+        }
+
+        .tema {
+            border: none;
+            background: #9b59b6;
+            color: white;
+            padding: 18px 14px;
+            min-height: 72px;
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .tema:hover {
+            background: #8e44ad;
+            transform: translateY(-2px);
+        }
+
+        .poznamka {
+            margin-top: 26px;
+            padding: 14px 16px;
+            background: #f8f1fb;
+            border-left: 4px solid #9b59b6;
+            border-radius: 8px;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="ramovanie">
+        <h1>Zmaturuj zo slovenčiny</h1>
+        <p class="info-text">Vyber si tému a otvorí sa ti príslušná teória.</p>
+
+        <div class="menu">
+            <button class="tema" onclick="openPDF('pdf/administrativny_styl.pdf')">Administratívny štýl</button>
+            <button class="tema" onclick="openPDF('pdf/barok.pdf')">Barok</button>
+            <button class="tema" onclick="openPDF('pdf/cestina_a_slovencina.pdf')">Čeština a slovenčina</button>
+            <button class="tema" onclick="openPDF('pdf/europska_medzivojnova_literatura.pdf')">Európska medzivojnová literatúra</button>
+            <button class="tema" onclick="openPDF('pdf/kompozicne_postupy_a_periodizacia_literatury.pdf')">Kompozičné postupy a periodizácia literatúry</button>
+            <button class="tema" onclick="openPDF('pdf/komunikacia.pdf')">Komunikácia</button>
+            <button class="tema" onclick="openPDF('pdf/lexika.pdf')">Lexika</button>
+            <button class="tema" onclick="openPDF('pdf/lexikografia_a_slovenske_slovniky.pdf')">Lexikografia a slovenské slovníky</button>
+            <button class="tema" onclick="openPDF('pdf/literatura_ako_umenie.pdf')">Literatúra ako umenie</button>
+            <button class="tema" onclick="openPDF('pdf/lyrizacne_tendencie_v_slovenskej_medzivojnovej_proze.pdf')">Lyrizačné tendencie v slovenskej medzivojnovej próze</button>
+            <button class="tema" onclick="openPDF('pdf/medzivojnova_drama.pdf')">Medzivojnová dráma</button>
+            <button class="tema" onclick="openPDF('pdf/moderna_a_avantgarda.pdf')">Moderna a avantgarda</button>
+            <button class="tema" onclick="openPDF('pdf/morfologia.pdf')">Morfológia</button>
+            <button class="tema" onclick="openPDF('pdf/naucny_styl.pdf')">Náučný štýl</button>
+            <button class="tema" onclick="openPDF('pdf/obohacovanie_slovnej_zasoby.pdf')">Obohacovanie slovnej zásoby</button>
+            <button class="tema" onclick="openPDF('pdf/osvietenstvo_a_slovensky_romantizmus.pdf')">Osvietenstvo a slovenský romantizmus</button>
+            <button class="tema" onclick="openPDF('pdf/poezia_po_po_1945.pdf')">Poézia po 1945</button>
+            <button class="tema" onclick="openPDF('pdf/prechod_od_romantizmu_k_realizmu.pdf')">Prechod od romantizmu k realizmu</button>
+            <button class="tema" onclick="openPDF('pdf/publicisticky_styl.pdf')">Publicistický štýl</button>
+            <button class="tema" onclick="openPDF('pdf/recnicky_styl.pdf')">Rečnícky štýl</button>
+            <button class="tema" onclick="openPDF('pdf/romantizmus.pdf')">Romantizmus</button>
+            <button class="tema" onclick="openPDF('pdf/slovenska_medzivojnova_poezia.pdf')">Slovenská medzivojnová poézia</button>
+            <button class="tema" onclick="openPDF('pdf/staroveka_literatura.pdf')">Staroveká literatúra</button>
+            <button class="tema" onclick="openPDF('pdf/stredna_generacia_slovenskych_prozaikov_po_po_1945.pdf')">Stredná generácia slovenských prozaikov po 1945</button>
+            <button class="tema" onclick="openPDF('pdf/stredoveka_literatura.pdf')">Stredoveká literatúra</button>
+            <button class="tema" onclick="openPDF('pdf/svetova_literatura_po_po_1945.pdf')">Svetová literatúra po 1945</button>
+            <button class="tema" onclick="openPDF('pdf/svetovy_klasicizmus.pdf')">Svetový klasicizmus</button>
+            <button class="tema" onclick="openPDF('pdf/svetovy_realizmus.pdf')">Svetový realizmus</button>
+            <button class="tema" onclick="openPDF('pdf/syntax.pdf')">Syntax</button>
+            <button class="tema" onclick="openPDF('pdf/struktura_literarneho_diela.pdf')">Štruktúra literárneho diela</button>
+            <button class="tema" onclick="openPDF('pdf/umelecke_jazykove_prostriedky.pdf')">Umelecké jazykové prostriedky</button>
+            <button class="tema" onclick="openPDF('pdf/uvaha_rozpravanie_charakteristika.pdf')">Úvaha, rozprávanie, charakteristika</button>
+            <button class="tema" onclick="openPDF('pdf/vseobecne_poznatky_o_jazyku.pdf')">Všeobecné poznatky o jazyku</button>
+            <button class="tema" onclick="openPDF('pdf/zvukova_rovina_jazyka.pdf')">Zvuková rovina jazyka</button>
+            <button class="tema" onclick="openPDF('pdf/1_vlna_slovenskeho_realizmu.pdf')">1. vlna slovenského realizmu</button>
+            <button class="tema" onclick="openPDF('pdf/2_vlna_slovenskeho_realizmu.pdf')">2. vlna slovenského realizmu</button>
+        </div>
+
+        <div class="poznamka">
+            PDF súbory musia byť nahraté v priečinku <b>pdf</b>. Názov PDF musí presne sedieť s názvom v odkaze v tomto HTML súbore.
+        </div>
+    </div>
+
+    <script>
+        function openPDF(subor) {
+            window.open(subor, '_blank');
+        }
+    </script>
+</body>
+</html>
