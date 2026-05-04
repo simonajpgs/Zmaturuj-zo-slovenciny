@@ -31,7 +31,7 @@
             border-bottom: 3px solid #9b59b6;
             color: #333;
         }
-        
+
         .menu {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -63,49 +63,51 @@
         <h1>Zmaturuj zo slovenčiny</h1>
 
         <div class="menu">
-            <button class="tema" onclick="openPDF('pdf/administrativny_styl.pdf')">Administratívny štýl</button>
-            <button class="tema" onclick="openPDF('pdf/barok.pdf')">Barok</button>
-            <button class="tema" onclick="openPDF('pdf/cestina_a_slovencina.pdf')">Čeština a slovenčina</button>
-            <button class="tema" onclick="openPDF('pdf/europska_medzivojnova_literatura.pdf')">Európska medzivojnová literatúra</button>
-            <button class="tema" onclick="openPDF('pdf/kompozicne_postupy_a_periodizacia_literatury.pdf')">Kompozičné postupy a periodizácia literatúry</button>
-            <button class="tema" onclick="openPDF('pdf/komunikacia.pdf')">Komunikácia</button>
-            <button class="tema" onclick="openPDF('pdf/lexika.pdf')">Lexika</button>
-            <button class="tema" onclick="openPDF('pdf/lexikografia_a_slovenske_slovniky.pdf')">Lexikografia a slovenské slovníky</button>
-            <button class="tema" onclick="openPDF('pdf/literatura_ako_umenie.pdf')">Literatúra ako umenie</button>
-            <button class="tema" onclick="openPDF('pdf/lyrizacne_tendencie_v_slovenskej_medzivojnovej_proze.pdf')">Lyrizačné tendencie v slovenskej medzivojnovej próze</button>
-            <button class="tema" onclick="openPDF('pdf/medzivojnova_drama.pdf')">Medzivojnová dráma</button>
-            <button class="tema" onclick="openPDF('pdf/moderna_a_avantgarda.pdf')">Moderna a avantgarda</button>
-            <button class="tema" onclick="openPDF('pdf/morfologia.pdf')">Morfológia</button>
-            <button class="tema" onclick="openPDF('pdf/naucny_styl.pdf')">Náučný štýl</button>
-            <button class="tema" onclick="openPDF('pdf/obohacovanie_slovnej_zasoby.pdf')">Obohacovanie slovnej zásoby</button>
-            <button class="tema" onclick="openPDF('pdf/osvietenstvo_a_slovensky_romantizmus.pdf')">Osvietenstvo a slovenský romantizmus</button>
-            <button class="tema" onclick="openPDF('pdf/poezia_po_po_1945.pdf')">Poézia po 1945</button>
-            <button class="tema" onclick="openPDF('pdf/prechod_od_romantizmu_k_realizmu.pdf')">Prechod od romantizmu k realizmu</button>
-            <button class="tema" onclick="openPDF('pdf/publicisticky_styl.pdf')">Publicistický štýl</button>
-            <button class="tema" onclick="openPDF('pdf/recnicky_styl.pdf')">Rečnícky štýl</button>
-            <button class="tema" onclick="openPDF('pdf/romantizmus.pdf')">Romantizmus</button>
-            <button class="tema" onclick="openPDF('pdf/slovenska_medzivojnova_poezia.pdf')">Slovenská medzivojnová poézia</button>
-            <button class="tema" onclick="openPDF('pdf/staroveka_literatura.pdf')">Staroveká literatúra</button>
-            <button class="tema" onclick="openPDF('pdf/stredna_generacia_slovenskych_prozaikov_po_po_1945.pdf')">Stredná generácia slovenských prozaikov po 1945</button>
-            <button class="tema" onclick="openPDF('pdf/stredoveka_literatura.pdf')">Stredoveká literatúra</button>
-            <button class="tema" onclick="openPDF('pdf/svetova_literatura_po_po_1945.pdf')">Svetová literatúra po 1945</button>
-            <button class="tema" onclick="openPDF('pdf/svetovy_klasicizmus.pdf')">Svetový klasicizmus</button>
-            <button class="tema" onclick="openPDF('pdf/svetovy_realizmus.pdf')">Svetový realizmus</button>
-            <button class="tema" onclick="openPDF('pdf/syntax.pdf')">Syntax</button>
-            <button class="tema" onclick="openPDF('pdf/struktura_literarneho_diela.pdf')">Štruktúra literárneho diela</button>
-            <button class="tema" onclick="openPDF('pdf/umelecke_jazykove_prostriedky.pdf')">Umelecké jazykové prostriedky</button>
-            <button class="tema" onclick="openPDF('pdf/uvaha_rozpravanie_charakteristika.pdf')">Úvaha, rozprávanie, charakteristika</button>
-            <button class="tema" onclick="openPDF('pdf/vseobecne_poznatky_o_jazyku.pdf')">Všeobecné poznatky o jazyku</button>
-            <button class="tema" onclick="openPDF('pdf/zvukova_rovina_jazyka.pdf')">Zvuková rovina jazyka</button>
-            <button class="tema" onclick="openPDF('pdf/1_vlna_slovenskeho_realizmu.pdf')">1. vlna slovenského realizmu</button>
-            <button class="tema" onclick="openPDF('pdf/2_vlna_slovenskeho_realizmu.pdf')">2. vlna slovenského realizmu</button>
+            <button class="tema" onclick="openPDFs(['pdf/administrativny styl.pdf'])">Administratívny štýl</button>
+            <button class="tema" onclick="openPDFs(['pdf/Barok.pdf'])">Barok</button>
+            <button class="tema" onclick="openPDFs(['pdf/Čeština a slovenčina (1).pdf'])">Čeština a slovenčina</button>
+            <button class="tema" onclick="openPDFs(['pdf/európska medzivojnová literatúra.pdf'])">Európska medzivojnová literatúra</button>
+            <button class="tema" onclick="openPDFs(['pdf/Kompozičné postupy v rozprávaní+periodizácia literatúry.pdf'])">Kompozičné postupy a periodizácia literatúry</button>
+            <button class="tema" onclick="openPDFs(['pdf/komunikacia.pdf'])">Komunikácia</button>
+            <button class="tema" onclick="openPDFs(['pdf/lexika.pdf'])">Lexika</button>
+            <button class="tema" onclick="openPDFs(['pdf/slovníky (2).pdf'])">Lexikografia a slovenské slovníky</button>
+            <button class="tema" onclick="openPDFs(['pdf/literatura_ako_umenie.pdf'])">Literatúra ako umenie</button>
+            <button class="tema" onclick="openPDFs(['pdf/Lyrizačné tendencie v slovenskej medzivojnovej próze.pdf'])">Lyrizačné tendencie v slovenskej medzivojnovej próze</button>
+            <button class="tema" onclick="openPDFs(['pdf/medzivojnová dráma.pdf'])">Medzivojnová dráma</button>
+            <button class="tema" onclick="openPDFs(['pdf/moderna, avantgarda.pdf'])">Moderna a avantgarda</button>
+            <button class="tema" onclick="openPDFs(['pdf/Morfologia.pdf'])">Morfológia</button>
+            <button class="tema" onclick="openPDFs(['pdf/Náučný štýl upr pdf.pdf'])">Náučný štýl</button>
+            <button class="tema" onclick="openPDFs(['pdf/obohacovanie_slovnej_zasoby.pdf'])">Obohacovanie slovnej zásoby</button>
+            <button class="tema" onclick="openPDFs(['pdf/Osvietenstvo_klasicizmus (1).pdf', 'pdf/Romantizmus_svetovy_slovensky.pdf'])">Osvietenstvo a slovenský romantizmus</button>
+            <button class="tema" onclick="openPDFs(['pdf/Svetová literatúra po 1945.pdf'])">Poézia po 1945</button>
+            <button class="tema" onclick="openPDFs(['pdf/Prechod od romantizmu k realizmu.pdf'])">Prechod od romantizmu k realizmu</button>
+            <button class="tema" onclick="openPDFs(['pdf/publicistický štýl - teória (3).pdf'])">Publicistický štýl</button>
+            <button class="tema" onclick="openPDFs(['pdf/Rečnícky-štýl.pdf'])">Rečnícky štýl</button>
+            <button class="tema" onclick="openPDFs(['pdf/Romantizmus_svetovy_slovensky.pdf'])">Romantizmus</button>
+            <button class="tema" onclick="openPDFs(['pdf/slovenská medzivojnová literatúra.pdf'])">Slovenská medzivojnová poézia</button>
+            <button class="tema" onclick="openPDFs(['pdf/Staroveka_lit_(snad)vsetky strany.pdf'])">Staroveká literatúra</button>
+            <button class="tema" onclick="openPDFs(['pdf/Stredná generácia slovenských prozaikov po r. 1945.pdf'])">Stredná generácia slovenských prozaikov po 1945</button>
+            <button class="tema" onclick="openPDFs(['pdf/Stredoveka_lit.pdf'])">Stredoveká literatúra</button>
+            <button class="tema" onclick="openPDFs(['pdf/Svetová literatúra po 1945.pdf'])">Svetová literatúra po 1945</button>
+            <button class="tema" onclick="openPDFs(['pdf/Klasicizmus.pdf', 'pdf/Osvietenstvo_klasicizmus (1).pdf'])">Svetový klasicizmus</button>
+            <button class="tema" onclick="openPDFs(['pdf/Svetový realizmus.pdf'])">Svetový realizmus</button>
+            <button class="tema" onclick="openPDFs(['pdf/syntax.pdf'])">Syntax</button>
+            <button class="tema" onclick="openPDFs(['pdf/Štruktúra literárneho diela.pdf'])">Štruktúra literárneho diela</button>
+            <button class="tema" onclick="openPDFs(['pdf/Umelecké jazykové prostriedky.pdf'])">Umelecké jazykové prostriedky</button>
+            <button class="tema" onclick="openPDFs(['pdf/uvaha.pdf', 'pdf/ROZPRÁVANIE.pdf', 'pdf/sloh - charakteristika osoby.pdf'])">Úvaha, rozprávanie, charakteristika</button>
+            <button class="tema" onclick="openPDFs(['pdf/komunikacia.pdf', 'pdf/Čeština a slovenčina (1).pdf'])">Všeobecné poznatky o jazyku</button>
+            <button class="tema" onclick="openPDFs(['pdf/zvuková rovina (2) (1).pdf'])">Zvuková rovina jazyka</button>
+            <button class="tema" onclick="openPDFs(['pdf/slovenský realizmus.pdf'])">1. vlna slovenského realizmu</button>
+            <button class="tema" onclick="openPDFs(['pdf/slovenský realizmus.pdf'])">2. vlna slovenského realizmu</button>
         </div>
 
     </div>
 
     <script>
-        function openPDF(subor) {
-            window.open(subor, '_blank');
+        function openPDFs(subory) {
+            subory.forEach(function(subor) {
+                window.open(subor, '_blank');
+            });
         }
     </script>
 </body>
