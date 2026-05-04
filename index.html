@@ -31,13 +31,7 @@
             border-bottom: 3px solid #9b59b6;
             color: #333;
         }
-
-        .info-text {
-            text-align: center;
-            color: #666;
-            margin: 18px 0 26px;
-        }
-
+        
         .menu {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -62,23 +56,11 @@
             background: #8e44ad;
             transform: translateY(-2px);
         }
-
-        .poznamka {
-            margin-top: 26px;
-            padding: 14px 16px;
-            background: #f8f1fb;
-            border-left: 4px solid #9b59b6;
-            border-radius: 8px;
-            color: #555;
-            font-size: 14px;
-            line-height: 1.5;
-        }
     </style>
 </head>
 <body>
     <div class="ramovanie">
         <h1>Zmaturuj zo slovenčiny</h1>
-        <p class="info-text">Vyber si tému a otvorí sa ti príslušná teória.</p>
 
         <div class="menu">
             <button class="tema" onclick="openPDF('pdf/administrativny_styl.pdf')">Administratívny štýl</button>
@@ -119,9 +101,6 @@
             <button class="tema" onclick="openPDF('pdf/2_vlna_slovenskeho_realizmu.pdf')">2. vlna slovenského realizmu</button>
         </div>
 
-        <div class="poznamka">
-            PDF súbory musia byť nahraté v priečinku <b>pdf</b>. Názov PDF musí presne sedieť s názvom v odkaze v tomto HTML súbore.
-        </div>
     </div>
 
     <script>
